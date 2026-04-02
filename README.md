@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-# AstroCET — Official Website
+# AstroCET — Website, Re-engineered
 
 [![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)](#)
 [![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)](#)

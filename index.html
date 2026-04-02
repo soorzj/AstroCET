@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstroCET — Astronomy Club, CET</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ LANDING SCREEN ═══════════════════════════════ -->
+  <div id="landing">
+    <canvas id="spaceCanvas"></canvas>
+
+    <div class="landing-content">
+      <div class="landing-badge">COLLEGE OF ENGINEERING TRIVANDRUM</div>
+      <h1 class="landing-title">
+        <span class="title-astro">ASTRO</span><span class="title-cet">CET</span>
+      </h1>
+      <p class="landing-tagline">Reaching beyond the horizon of the known universe</p>
+      <button id="enterBtn" class="enter-btn">
+        <span class="enter-text">ENTER THE COSMOS</span>
+        <svg class="enter-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="scroll-hint">scroll or click to enter</div>
+  </div>
+
+  <!-- ═══════════════════════════════ MAIN SITE ═══════════════════════════════ -->
+  <div id="mainSite" class="hidden">
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">ASTRO<span>CET</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" class="mob-link">About</a></li>
+        <li><a href="#events" class="mob-link">Events</a></li>
+        <li><a href="#gallery" class="mob-link">Gallery</a></li>
+        <li><a href="#team" class="mob-link">Team</a></li>
+        <li><a href="#contact" class="mob-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <canvas id="heroCanvas"></canvas>
+        <div class="hero-inner"> 
+      <div class="hero-content">
+        <div class="hero-eyebrow">Est. 2019 · CET Trivandrum</div>
+        <h2 class="hero-title">
+          <span class="ht-line">We don't just</span>
+          <span class="ht-line ht-accent">gaze at the stars.</span>
+          <span class="ht-line">We chase them.</span>
+        </h2>
+        <p class="hero-desc">AstroCET is the astronomy club of the College of Engineering Trivandrum — a community of curious minds exploring the cosmos through science, technology, and wonder.</p>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">2019</span><span class="stat-label">Founded</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num">70+</span><span class="stat-label">Active Members</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Events Hosted</span></div>
+        </div>
+      </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-container">
+        <div class="section-label">WHO WE ARE</div>
+        <h2 class="section-title">Born from curiosity.<br/>Built on community.</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>AstroCET began in 2019 as a humble hobby club, a gathering of stargazers who wanted to look up together. Over the years, it has grown into a beacon of celestial exploration — nurturing a deep camaraderie among students while diving into the technical facets of the cosmos.</p>
+            <p>From hosting public sky-gazing events to running cutting-edge workshops in AI/ML for space science, AstroCET bridges the gap between engineering talent and astronomical wonder.</p>
+          </div>
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="card-icon">◎</div>
+              <h3>Vision</h3>
+              <p>To lead in astronomy education and outreach, inspiring students and the public to explore the cosmos. By fostering skill development, collaborating with institutions, and promoting innovation, the club seeks to create an inclusive environment, expand its reach, and contribute to scientific knowledge.</p>
+            </div>
+            <div class="about-card">
+              <div class="card-icon">⊕</div>
+              <h3>Mission</h3>
+              <p>To ignite a passion for astronomy among students and the general public, providing a platform for learning, exploration, and innovation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="section section-dark">
+      <div class="section-container">
+        <div class="section-label">WHAT WE'VE DONE</div>
+        <h2 class="section-title">Past Events</h2>
+        <div class="events-grid">
+
+          <div class="event-card">
+            <div class="event-num">01</div>
+            <div class="event-body">
+              <div class="event-date">NOV 25, 2023</div>
+              <h3>Astrophotography Workshop</h3>
+              <p>Hosted in collaboration with CET Shutterbugs and AASTRO Kerala, led by renowned expert Sarath Prabhavu J. Participants learned to capture the night sky with stunning precision.</p>
+              <div class="event-tag">Workshop</div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-num">02</div>
+            <div class="event-body">
+              <div class="event-date">NOV 26, 2023</div>
+              <h3>Expedition Aditya — Solar Probing Workshop</h3>
+              <p>In collaboration with Shastra Snehi, focused on solar probing and sunspot viewing, bringing together experts and participants to explore the Sun's dynamic activity.</p>
+              <div class="event-tag">Science</div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-num">03</div>
+            <div class="event-body">
+              <div class="event-date">2024</div>
+              <h3>GBFK Outreach Program</h3>
+              <p>AstroCET's outreach at the Global Science Festival Kerala featured Dr. Sarita Vig from IIST, followed by a sky-gazing session in collaboration with the Breakthrough Science Society.</p>
+              <div class="event-tag">Outreach</div>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-num">04</div>
+            <div class="event-body">
+              <div class="event-date">DRISHTI '24</div>
+              <h3>AI/ML for Space Exploration</h3>
+              <p>A standout workshop by AstroCET and HT Labs India. Over 70 participants learned Python-based data analysis and ML applications in astronomy using real astronomical datasets.</p>
+              <div class="event-tag">Technology</div>
+            </div>
+          </div>
+
+          <div class="event-card event-card--upcoming">
+            <div class="event-num">05</div>
+            <div class="event-body">
+              <div class="event-date">UPCOMING · 2025</div>
+              <h3>Night Sky Photography Camp</h3>
+              <p>A planned overnight observation and photography camp for club members. Location and date to be announced — stay tuned via our social channels.</p>
+              <div class="event-tag event-tag--upcoming">Coming Soon</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ANNOUNCEMENTS -->
+    <section id="announcements" class="section">
+      <div class="section-container">
+        <div class="section-label">LATEST NEWS</div>
+        <h2 class="section-title">Announcements</h2>
+        <div class="announce-list">
+          <div class="announce-item">
+            <div class="announce-dot"></div>
+            <div class="announce-content">
+              <div class="announce-tag">Team Update</div>
+              <h3>Technical Team Unveiled</h3>
+              <p>We are excited to announce the formation of our dedicated Technical Team. Focused on advancing our exploration through innovative technology, they will build tools, conduct research, and create engaging activities for our community.</p>
+            </div>
+          </div>
+          <div class="announce-item">
+            <div class="announce-dot"></div>
+            <div class="announce-content">
+              <div class="announce-tag">Milestone</div>
+              <h3>Website Launch</h3>
+              <p>Welcome to the brand-new AstroCET website — your go-to resource for events, resources, and everything astronomy at CET Trivandrum.</p>
+            </div>
+          </div>
+          <div class="announce-item">
+            <div class="announce-dot announce-dot--muted"></div>
+            <div class="announce-content announce-content--muted">
+              <div class="announce-tag">Placeholder</div>
+              <h3>New Collaboration Announcement</h3>
+              <p>Details of our upcoming institutional collaboration will be shared here. Check back soon for the full reveal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section section-dark">
+      <div class="section-container">
+        <div class="section-label">MOMENTS IN TIME</div>
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item gi-tall"><div class="gallery-placeholder">Gallery Image 1</div></div>
+          <div class="gallery-item"><div class="gallery-placeholder">Gallery Image 2</div></div>
+          <div class="gallery-item"><div class="gallery-placeholder">Gallery Image 3</div></div>
+          <div class="gallery-item gi-wide"><div class="gallery-placeholder">Gallery Image 4</div></div>
+          <div class="gallery-item"><div class="gallery-placeholder">Gallery Image 5</div></div>
+          <div class="gallery-item"><div class="gallery-placeholder">Gallery Image 6</div></div>
+          <div class="gallery-item gi-tall"><div class="gallery-placeholder">Gallery Image 7</div></div>
+          <div class="gallery-item"><div class="gallery-placeholder">Gallery Image 8</div></div>
+        </div>
+        <p class="gallery-note">Images will be loaded from the club's archive. Replace .gallery-placeholder divs with &lt;img&gt; tags pointing to your /images/gallery/ paths.</p>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section">
+      <div class="section-container">
+        <div class="section-label">THE PEOPLE BEHIND IT</div>
+        <h2 class="section-title">Our Team</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar">
+              <div class="avatar-placeholder">P</div>
+            </div>
+            <div class="team-info">
+              <h3>[President Name]</h3>
+              <span>President</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">
+              <div class="avatar-placeholder">VP</div>
+            </div>
+            <div class="team-info">
+              <h3>[Vice President Name]</h3>
+              <span>Vice President</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">
+              <div class="avatar-placeholder">T</div>
+            </div>
+            <div class="team-info">
+              <h3>[Technical Lead Name]</h3>
+              <span>Technical Lead</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">
+              <div class="avatar-placeholder">E</div>
+            </div>
+            <div class="team-info">
+              <h3>[Events Head Name]</h3>
+              <span>Events Head</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">
+              <div class="avatar-placeholder">D</div>
+            </div>
+            <div class="team-info">
+              <h3>[Design Lead Name]</h3>
+              <span>Design Lead</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">
+              <div class="avatar-placeholder">O</div>
+            </div>
+            <div class="team-info">
+              <h3>[Outreach Lead Name]</h3>
+              <span>Outreach Lead</span>
+            </div>
+          </div>
+        </div>
+        <p class="team-note">Replace placeholder names and add photo URLs to the team-avatar divs.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">ASTRO<span>CET</span></div>
+          <p>Astronomy Club<br/>College of Engineering Trivandrum</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <a href="https://www.instagram.com/astro.cet/" target="_blank" class="social-link">Instagram ↗</a>
+          <a href="https://www.linkedin.com/company/astrocet/" target="_blank" class="social-link">LinkedIn ↗</a>
+        </div>
+        <div class="footer-subscribe">
+          <h4>Stay Updated</h4>
+          <p>Subscribe for event announcements and news.</p>
+          <form class="subscribe-form" id="subscribeForm">
+            <input type="email" placeholder="your@email.com" required />
+            <button type="submit">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 AstroCET. Made with curiosity by the AstroCET team.</p>
+      </div>
+    </footer>
+
+  </div><!-- end #mainSite -->
+
+  <script src="script.js"></script>
+</body>
+</html>

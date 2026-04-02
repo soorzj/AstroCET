@@ -1,2 +1,64 @@
-# AstroCET
-Website im developing for selection to astrocet's Web team
+<a name="top"></a>
+
+# AstroCET — Official Website
+
+[![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)](#)
+[![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](#)
+[![Fonts](https://img.shields.io/badge/fonts-Google_Fonts-4285F4?logo=google&logoColor=white)](https://fonts.google.com)
+[![Hosted on](https://img.shields.io/badge/hosted_on-GitHub_Pages-222222?logo=github&logoColor=white)](https://soorzj.github.io/AstroCET/)
+[![Club](https://img.shields.io/badge/club-AstroCET-gold)](#)
+[![College](https://img.shields.io/badge/college-CET_Trivandrum-blue)](#)
+[![Status](https://img.shields.io/badge/status-active-brightgreen)](#)
+
+> This is a redesigned website of **AstroCET**, the astronomy club of the College of Engineering Trivandrum (CET).  
+> Built as part of my application to join the **AstroCET Website Team**.
+
+---
+
+## Table of Contents
+
+- [About the Project](#-about-the-project)
+- [See the website](#-see-the-website)
+- [Features](#-features)
+- [About Me](#-about-me)
+- [Contact](#-contact)
+
+
+## About the Project
+
+This is a redesigned website for **AstroCET**, built with vanilla HTML, CSS, and JavaScript. The goal was to create something that actually *feels* like an astronomy club: dark, cinematic, and technically interesting, while remaining easy to maintain and extend.
+
+The original website had mismatched fonts, inconsistent color schemes, and components that didn't feel cohesive. This redesign fixes that with a unified **deep-space aesthetic** — void black backgrounds, amber/gold accents, and three purposefully chosen typefaces.
+
+
+##  See the website
+
+ **[soorzj.github.io/AstroCET](https://soorzj.github.io/AstroCET/)**
+
+
+##  Features
+
+- **Cinematic landing screen** with an animated HTML5 canvas — stars, a mini solar system with orbiting planets, shooting stars, and mouse-parallax depth
+- **"Enter" transition** — the landing fades and scales out, the main site fades in with staggered scroll-reveal animations
+- **Custom cursor** — gold dot + ring that tracks the mouse with smooth lag
+- **Sticky navbar** with scroll-blur effect and mobile hamburger menu
+- **Fully responsive** — mobile, tablet, and desktop layouts
+- **Zero dependencies** — pure HTML/CSS/JS, loads fast ~80MB RAM Usage, no npm required
+
+
+##  About Me
+
+I'm a student at CET with an interest in web development and UI design. I built this redesign as part of my application to join the **AstroCET Website Team**. I wanted to show what a cohesive, technically considered frontend could look like for the club — something that matches the ambition of AstroCET's work.
+
+
+##  Contact
+
+**AstroCET**
+- Instagram: [@astro.cet](https://www.instagram.com/soorzj/)
+- LinkedIn: [AstroCET](https://www.linkedin.com/in/soorzj/)
+
+
+<p align="center">Made by soorzj · AstroCET · College of Engineering Trivandrum</p>
+
+[Back to top](#top)

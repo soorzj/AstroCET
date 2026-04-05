@@ -1,9 +1,4 @@
-/* ═══════════════════════════════════════════════════════════
-   AstroCET — Redesign
-   Aesthetic: Deep-space observatory · amber/gold on void black
-   ═══════════════════════════════════════════════════════════ */
 
-/* ── RESET & TOKENS ─────────────────────────────────────── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -39,7 +34,7 @@ body {
   cursor: none;
 }
 
-/* ── CUSTOM CURSOR ─────────────────────────────────────── */
+
 .cursor-dot {
   position: fixed;
   width: 8px; height: 8px;
@@ -66,7 +61,6 @@ body:has(button:hover) .cursor-dot { width: 14px; height: 14px; background: var(
 body:has(a:hover) .cursor-ring,
 body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: var(--gold); }
 
-/* ── LANDING SCREEN ────────────────────────────────────── */
 #landing {
   position: fixed;
   inset: 0;
@@ -186,7 +180,7 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
   animation: fadeUp 1.2s 1.5s both;
 }
 
-/* ── MAIN SITE ─────────────────────────────────────────── */
+
 #mainSite {
   opacity: 0;
   transition: opacity 0.8s ease;
@@ -194,7 +188,7 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
 #mainSite.visible { opacity: 1; }
 #mainSite.hidden { display: none; }
 
-/* ── NAVBAR ────────────────────────────────────────────── */
+
 #navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -289,7 +283,7 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
 }
 .mobile-menu a:hover { color: var(--gold); }
 
-/* ── HERO ──────────────────────────────────────────────── */
+
 #hero {
   position: relative;
   min-height: 100vh;
@@ -402,7 +396,7 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
-/* ── SECTION BASE ──────────────────────────────────────── */
+
 .section { padding: 120px 3rem; }
 .section-dark { background: var(--space); }
 
@@ -425,7 +419,7 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
   color: var(--star);
 }
 
-/* ── ABOUT ─────────────────────────────────────────────── */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -479,7 +473,7 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
   color: var(--star-dim);
 }
 
-/* ── EVENTS ────────────────────────────────────────────── */
+
 .events-grid {
   display: flex;
   flex-direction: column;
@@ -542,7 +536,6 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
 .event-tag--upcoming { color: var(--amber); border-color: rgba(232,137,42,0.4); }
 .event-card--upcoming .event-body h3 { color: var(--star-dim); }
 
-/* ── ANNOUNCEMENTS ─────────────────────────────────────── */
 .announce-list {
   display: flex;
   flex-direction: column;
@@ -590,7 +583,6 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
 .announce-content--muted p { color: var(--muted); }
 .announce-content--muted .announce-tag { color: var(--muted); }
 
-/* ── GALLERY ───────────────────────────────────────────── */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -635,7 +627,6 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
   text-align: center;
 }
 
-/* ── TEAM ──────────────────────────────────────────────── */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -698,7 +689,6 @@ body:has(button:hover) .cursor-ring { width: 56px; height: 56px; border-color: v
   text-align: center;
 }
 
-/* ── FOOTER ────────────────────────────────────────────── */
 footer#contact {
   background: var(--void);
   border-top: 1px solid rgba(212,168,67,0.15);
@@ -802,7 +792,7 @@ footer h4 {
   text-transform: uppercase;
 }
 
-/* ── ANIMATIONS ────────────────────────────────────────── */
+/*ANIMATIONS*/
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -816,7 +806,8 @@ footer h4 {
   50%       { opacity: 1;   transform: scale(1.5); }
 }
 
-/* Section reveal */
+/*Section reveal (BUGGED)*/
+/*FIXED IG*/
 .reveal {
   opacity: 0;
   transform: translateY(32px);
@@ -824,7 +815,6 @@ footer h4 {
 }
 .reveal.in-view { opacity: 1; transform: translateY(0); }
 
-/* ── RESPONSIVE ────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 3rem; }

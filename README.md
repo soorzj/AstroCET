@@ -1,6 +1,4 @@
-<a name="top"></a>
-
-# AstroCET — Website, Re-engineered
+# AstroCET — Website, Re-engineered (for web team recrcuitment)
 
 [![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)](#)
 [![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)](#)
@@ -39,26 +37,25 @@ The original website had mismatched fonts, inconsistent color schemes, and compo
 
 ##  Features
 
-- **Cinematic landing screen** with an animated HTML5 canvas — stars, a mini solar system with orbiting planets, shooting stars, and mouse-parallax depth
-- **"Enter" transition** — the landing fades and scales out, the main site fades in with staggered scroll-reveal animations
+- **Landing screen** with an animated HTML5 canvas — stars, a mini solar system with orbiting planets, shooting stars, and mouse-parallax depth.
+- **Enter transition**
 - **Custom cursor** — gold dot + ring that tracks the mouse with smooth lag
-- **Sticky navbar** with scroll-blur effect and mobile hamburger menu
+- **Sticky navbar**
 - **Fully responsive** — mobile, tablet, and desktop layouts
 - **Zero dependencies** — pure HTML/CSS/JS, loads fast ~80MB RAM Usage, no npm required
 
 
 ##  About Me
 
-I'm a student at CET with an interest in web development and UI design. I built this redesign as part of my application to join the **AstroCET Website Team**. I wanted to show what a cohesive, technically considered frontend could look like for the club — something that matches the ambition of AstroCET's work.
+I'm a student at CET with an interest in web development and UI design. I built this redesign as part of my application to join the **AstroCET Website Team**. I wanted to show what a cohesive, technically considered frontend could look like for the club — something that matches the ambition of AstroCET's work. As I have really less time cue to exams, lab, record submissions and IPR presentations, I couldnt make it tailor-perfect, still I tried what I could.  
 
 
 ##  Contact
 
-**AstroCET**
-- Instagram: [@astro.cet](https://www.instagram.com/soorzj/)
-- LinkedIn: [AstroCET](https://www.linkedin.com/in/soorzj/)
+**soorzj**
+- Instagram: [@soorzj](https://www.instagram.com/soorzj/)
+- LinkedIn: [Sooraj Krishna S](https://www.linkedin.com/in/soorzj/)
 
 
-<p align="center">Made by soorzj · AstroCET · College of Engineering Trivandrum</p>
+<p align="center">Made by soorzj · for AstroCET · College of Engineering Trivandrum</p>
 
-[Back to top](#top)

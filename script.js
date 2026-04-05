@@ -1,14 +1,8 @@
-/* ═══════════════════════════════════════════════════════════
-   AstroCET — script.js
-   Handles: custom cursor, landing canvas, hero canvas,
-            enter transition, scroll reveals, navbar, mobile menu
-   ═══════════════════════════════════════════════════════════ */
 
 'use strict';
 
-// ──────────────────────────────────────────────────────────
-// CUSTOM CURSOR
-// ──────────────────────────────────────────────────────────
+// CUSTOM CURSOR (so buggy / fixed)
+
 const cursorDot  = document.createElement('div');
 const cursorRing = document.createElement('div');
 cursorDot.className  = 'cursor-dot';
@@ -34,9 +28,6 @@ document.addEventListener('mousemove', (e) => {
   requestAnimationFrame(animateRing);
 })();
 
-// ──────────────────────────────────────────────────────────
-// LANDING CANVAS — Stars + Orbiting solar system + mouse parallax
-// ──────────────────────────────────────────────────────────
 (function initLandingCanvas() {
   const canvas = document.getElementById('spaceCanvas');
   const ctx    = canvas.getContext('2d');
@@ -51,7 +42,7 @@ document.addEventListener('mousemove', (e) => {
     initStars();
   }
 
-  // ── Stars ──
+
   const STAR_COUNT = 320;
   let stars = [];
   function initStars() {
@@ -66,7 +57,6 @@ document.addEventListener('mousemove', (e) => {
     }));
   }
 
-  // ── Shooting stars ──
   let shooters = [];
   function spawnShooter() {
     shooters.push({
@@ -81,7 +71,6 @@ document.addEventListener('mousemove', (e) => {
   }
   spawnShooter();
 
-  // ── Solar system ──
   const SUN_R = 28;
   const planets = [
     { r: 5,  orbitR: 90,  speed: 0.0055, angle: 0.8,  color: '#c8b89a', glowColor: '#c8b89a' },  // mercury-ish
@@ -244,9 +233,7 @@ document.addEventListener('mousemove', (e) => {
 })();
 
 
-// ──────────────────────────────────────────────────────────
-// HERO CANVAS — subtle ambient star field
-// ──────────────────────────────────────────────────────────
+
 (function initHeroCanvas() {
   const canvas = document.getElementById('heroCanvas');
   if (!canvas) return;
@@ -286,10 +273,6 @@ document.addEventListener('mousemove', (e) => {
   requestAnimationFrame(draw);
 })();
 
-
-// ──────────────────────────────────────────────────────────
-// ENTER TRANSITION
-// ──────────────────────────────────────────────────────────
 function triggerEnter() {
   const landing  = document.getElementById('landing');
   const mainSite = document.getElementById('mainSite');
@@ -320,9 +303,6 @@ document.addEventListener('keydown', (e) => {
 });
 
 
-// ──────────────────────────────────────────────────────────
-// SCROLL REVEAL
-// ──────────────────────────────────────────────────────────
 function initScrollReveals() {
   const targets = document.querySelectorAll(
     '.about-card, .event-card, .announce-item, .gallery-item, ' +
@@ -350,9 +330,6 @@ function initScrollReveals() {
 }
 
 
-// ──────────────────────────────────────────────────────────
-// NAVBAR SCROLL EFFECT
-// ──────────────────────────────────────────────────────────
 function initNavbar() {
   const navbar = document.getElementById('navbar');
   const hamburger = document.getElementById('hamburger');
@@ -375,9 +352,6 @@ function initNavbar() {
 }
 
 
-// ──────────────────────────────────────────────────────────
-// SUBSCRIBE FORM
-// ──────────────────────────────────────────────────────────
 document.getElementById('subscribeForm')?.addEventListener('submit', (e) => {
   e.preventDefault();
   const btn = e.target.querySelector('button');
@@ -390,10 +364,7 @@ document.getElementById('subscribeForm')?.addEventListener('submit', (e) => {
   }, 3000);
 });
 
-
-// ──────────────────────────────────────────────────────────
-// UTILITIES
-// ──────────────────────────────────────────────────────────
+//ai told to add this 
 function hexToRgba(hex, alpha) {
   const r = parseInt(hex.slice(1,3), 16);
   const g = parseInt(hex.slice(3,5), 16);

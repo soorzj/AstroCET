@@ -39,10 +39,16 @@ The original website had mismatched fonts, inconsistent color schemes, and compo
 
 - **Landing screen** with an animated HTML5 canvas — stars, a mini solar system with orbiting planets, shooting stars, and mouse-parallax depth.
 - **Enter transition**
-- **Custom cursor** — gold dot + ring that tracks the mouse with smooth lag
-- **Sticky navbar**
-- **Fully responsive** — mobile, tablet, and desktop layouts
+- **Custom cursor** — gold dot + ring that tracks the mouse with smooth lag <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/fe7e04f4-eb2c-4189-b395-a85164699b57" />
+- **Sticky navbar** <img width="1098" alt="image" src="https://github.com/user-attachments/assets/9dadda2e-9619-438d-bb71-745073f5ef1b" />
+- **Fully responsive** — mobile, tablet / desktop layouts
+
+  <img width="595" height="963" alt="image" src="https://github.com/user-attachments/assets/e4f377e1-ff9d-41b9-a9ba-5818ea5b0802" /> <img  width="190" alt="image" src="https://github.com/user-attachments/assets/c89694ae-51d0-4026-b73e-cb78688f5463" />
+  <p align="center">Destop Screen              vs              Mobile Screen</p>
 - **Zero dependencies** — pure HTML/CSS/JS, loads fast ~80MB RAM Usage, no npm required
+  
+  <img width="320" height="187" alt="image" src="https://github.com/user-attachments/assets/b922763a-308a-4184-b4ff-9d55c429eb28" />
+
 
 
 ##  About Me
